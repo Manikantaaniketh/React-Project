@@ -1,0 +1,157 @@
+#home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: white;
+    padding: 20px 40px 60px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    #home {
+        padding: 20px 10px 10px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    #home {
+        padding: 15px 5px 60px;
+        gap: 10px;
+        justify-content: center;
+    }
+}
+
+.no-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    color: #222;
+    width: 100%;
+    background-color: #f9f9f9;
+    border: 1px dashed #ccc;
+    margin: 40px 0;
+}
+
+.no-results-icon {
+    font-size: 80px;
+    color: #ff385c;
+    margin-bottom: 20px;
+}
+
+.no-results h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.no-results p {
+    font-size: 1.1rem;
+    color: #717171;
+    margin-bottom: 30px;
+}
+
+.clear-search-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #222;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.clear-search-btn:hover {
+    background-color: #000;
+    transform: scale(1.05);
+}
+
+.amenity-filter-bar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 20px;
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    position: sticky;
+    top: 70px;
+    z-index: 50;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.amenity-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    flex: 1;
+}
+
+.amenity-chip {
+    padding: 7px 16px;
+    border-radius: 50px;
+    border: 1.5px solid #e0e0e0;
+    background: white;
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.amenity-chip:hover {
+    border-color: #1a73e8;
+    color: #1a73e8;
+    background: #e8f0fe;
+    transform: translateY(-1px);
+}
+
+.amenity-chip.active {
+    background: #1a73e8;
+    color: white;
+    border-color: #1a73e8;
+    box-shadow: 0 3px 10px rgba(26, 115, 232, 0.3);
+}
+
+.clear-amenity-btn {
+    padding: 7px 14px;
+    border-radius: 50px;
+    border: 1.5px solid #f44336;
+    background: white;
+    color: #f44336;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.clear-amenity-btn:hover {
+    background: #f44336;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .amenity-filter-bar {
+        top: 60px;
+        padding: 12px 10px;
+        gap: 8px;
+    }
+
+    .amenity-chip {
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+}

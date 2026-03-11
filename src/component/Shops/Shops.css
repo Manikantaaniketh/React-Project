@@ -1,0 +1,27 @@
+#shops {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: white;
+    padding: 20px 40px 60px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    #shops {
+        padding: 20px 20px 60px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    #shops {
+        padding: 20px 10px 60px;
+        gap: 16px;
+        justify-content: center;
+    }
+}

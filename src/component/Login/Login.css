@@ -1,0 +1,148 @@
+.login-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f6fa;
+  padding-top: 180px;
+}
+
+.login-left {
+  flex: 1;
+  background: url("https://images.unsplash.com/photo-1560518883-ce09059eeffa") no-repeat center/cover;
+  border-radius: 20px;
+  margin: 20px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+  color: white;
+}
+
+.overlay h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.login-right {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-right h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: rgb(247, 8, 8);
+}
+
+.sub-text {
+  color: gray;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input {
+  padding: 12px 20px;
+  margin: 10px 0 20px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 15px;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.login-btn {
+  padding: 14px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(to right, #f44336, #d32f2f);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(244, 67, 54, 0.3);
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 13px;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {
+  .login-right {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .login-container {
+    flex-direction: column;
+    padding-top: 180px;
+  }
+
+  .login-left {
+    height: 300px;
+    flex: none;
+    margin: 20px;
+  }
+
+  .login-right {
+    flex: none;
+    padding: 20px 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .login-container {
+    padding-top: 180px;
+  }
+
+  .login-left {
+    height: 200px;
+    margin: 10px;
+  }
+
+  .login-right {
+    padding: 20px;
+  }
+
+  .login-right h1 {
+    font-size: 24px;
+  }
+
+  input {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .login-btn {
+    padding: 12px;
+  }
+}

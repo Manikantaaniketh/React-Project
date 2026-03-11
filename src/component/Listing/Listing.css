@@ -1,0 +1,283 @@
+#Listing {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fff5f5 0%, #ffffff 60%);
+    padding: 180px 40px 60px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+
+.listing-container {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.listing-form-side {
+    flex: 1.4;
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.listing-header {
+    margin-bottom: 30px;
+}
+
+.listing-header h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(247, 8, 8);
+    margin-bottom: 8px;
+}
+
+.listing-header p {
+    font-size: 15px;
+    color: #777;
+    font-weight: 300;
+}
+
+
+.listing-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.listing-field label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.field-icon {
+    font-size: 17px;
+    color: rgb(247, 8, 8);
+}
+
+.listing-field input,
+.listing-field textarea {
+    width: 100%;
+    padding: 12px 14px;
+    box-sizing: border-box;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #333;
+    outline: none;
+    font-family: inherit;
+    background-color: #fafafa;
+    transition: border-color 0.2s;
+}
+
+.listing-field input:focus,
+.listing-field textarea:focus {
+    border-color: rgb(247, 8, 8);
+    background-color: white;
+}
+
+.listing-field textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.listing-row {
+    display: flex;
+    gap: 20px;
+}
+
+.listing-row .listing-field {
+    flex: 1;
+}
+
+.listing-images-section {
+    margin-bottom: 18px;
+}
+
+.listing-images-section>label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.listing-image-row {
+    display: flex;
+    gap: 14px;
+}
+
+.img-upload-box {
+    flex: 1;
+    height: 110px;
+    border: 2px dashed #e0e0e0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border-color 0.2s;
+    background-color: #fafafa;
+}
+
+.img-upload-box:hover {
+    border-color: rgb(247, 8, 8);
+}
+
+.img-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    color: #aaa;
+    font-size: 13px;
+}
+
+.img-placeholder svg {
+    font-size: 26px;
+}
+
+.img-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Submit Button */
+#listbtn {
+    padding: 13px 40px;
+    background-color: rgb(247, 8, 8);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#listbtn:hover {
+    background-color: #cc0000;
+    transform: scale(1.03);
+}
+
+#listbtn svg {
+    font-size: 20px;
+}
+
+/* ── RIGHT: Info Panel ── */
+.listing-info-side {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.listing-info-card {
+    background: white;
+    border-radius: 16px;
+    padding: 28px 24px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+}
+
+.listing-info-card h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 16px;
+}
+
+.listing-info-card ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.listing-info-card ul li {
+    font-size: 14px;
+    color: #555;
+    font-weight: 300;
+}
+
+.listing-tips-card {
+    background: linear-gradient(135deg, rgb(247, 8, 8), #ff6b6b);
+    border-radius: 16px;
+    padding: 24px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.listing-tips-card h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.listing-tips-card p {
+    font-size: 13px;
+    font-weight: 300;
+    opacity: 0.92;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .listing-container {
+        flex-direction: column;
+    }
+
+    .listing-info-side {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .listing-info-card,
+    .listing-tips-card {
+        flex: 1;
+        min-width: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    #Listing {
+        padding: 140px 16px 40px;
+    }
+
+    .listing-form-side {
+        padding: 24px 18px;
+    }
+
+    .listing-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .listing-image-row {
+        flex-direction: column;
+    }
+
+    .img-upload-box {
+        height: 90px;
+    }
+}
